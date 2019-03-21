@@ -4,13 +4,18 @@ import com.google.common.collect.ImmutableList;
 import net.corda.core.contracts.ContractState;
 import net.corda.core.identity.AbstractParty;
 import net.corda.core.identity.Party;
+<<<<<<< HEAD
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+=======
+
+>>>>>>> e6a7ea584a2e7d0a5cc32eb641d6942b7d38bd36
 import java.util.List;
 
 /* Our state, defining a shared fact on the ledger.
  * See src/main/java/examples/ArtState.java for an example. */
+<<<<<<< HEAD
 public class TokenState implements ContractState {
 
 
@@ -63,5 +68,8 @@ public class TokenState implements ContractState {
     }
 
 
+=======
+public class TokenState {
+>>>>>>> e6a7ea584a2e7d0a5cc32eb641d6942b7d38bd36
 
 }

@@ -11,6 +11,7 @@ public class StateTests {
     private final Party alice = new TestIdentity(new CordaX500Name("Alice", "", "GB")).getParty();
     private final Party bob = new TestIdentity(new CordaX500Name("Bob", "", "GB")).getParty();
 
+<<<<<<< HEAD
     @Test
     public void tokenStateHasIssuerOwnerAndAmountParamsOfCorrectTypeInConstructor() {
         new TokenState(alice, bob, 1);
@@ -36,4 +37,31 @@ public class StateTests {
         assert(tokenState.getParticipants().contains(alice));
         assert(tokenState.getParticipants().contains(bob));
     }
+=======
+//    @Test
+//    public void tokenStateHasIssuerOwnerAndAmountParamsOfCorrectTypeInConstructor() {
+//        new TokenState(alice, bob, 1);
+//    }
+
+//    @Test
+//    public void tokenStateHasGettersForIssuerOwnerAndAmount() {
+//        TokenState tokenState = new TokenState(alice, bob, 1);
+//        assertEquals(alice, tokenState.getIssuer());
+//        assertEquals(bob, tokenState.getOwner());
+//        assertEquals(1, tokenState.getAmount());
+//    }
+
+//    @Test
+//    public void tokenStateImplementsContractState() {
+//        assert(new TokenState(alice, bob, 1) instanceof ContractState);
+//    }
+
+//    @Test
+//    public void tokenStateHasTwoParticipantsTheIssuerAndTheOwner() {
+//        TokenState tokenState = new TokenState(alice, bob, 1);
+//        assertEquals(2, tokenState.getParticipants().size());
+//        assert(tokenState.getParticipants().contains(alice));
+//        assert(tokenState.getParticipants().contains(bob));
+//    }
+>>>>>>> e6a7ea584a2e7d0a5cc32eb641d6942b7d38bd36
 }
